@@ -39,7 +39,11 @@ define Package/simple-obfs
 	CATEGORY:=Network
 	TITLE:=Simple-obfs
 	URL:=https://github.com/shadowsocks/simple-obfs
-	DEPENDS:=+libpthread +!SIMPLE_OBFS_STATIC_LINK:libev
+	DEPENDS:=+libpthread + 
+	
+	
+	
+	libev
 endef
 
 Package/simple-obfs-server = $(Package/simple-obfs)
